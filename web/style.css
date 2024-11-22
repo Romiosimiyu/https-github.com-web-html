@@ -1,0 +1,9 @@
+.portfolio-grid{
+    display: flex;
+    gap: 20PX;
+    align-items: absolute;
+}
+img {
+    border-radius: 20px;
+    width: 100%;
+  }

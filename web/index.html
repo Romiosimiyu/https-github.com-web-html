@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+     <link rel="stylesheet" type="text/css" a href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romiothedon.tech</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f4f7fc;
+        }
+
+        header {
+            background: linear-gradient(90deg, #002b5c, #00a6b4);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header .logo {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header nav {
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Slideshow */
+        .slideshow {
+            max-width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: none;
+        }
+
+        .slides img:first-child {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(90deg, #00a6b4, #00708a);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.8rem 1.5rem;
+            background: #fdd835;
+            color: #002b5c;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .hero a:hover {
+            background: #c9a705;
+        }
+
+        /* Footer */
+        footer {
+            background: #002b5c;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Logo -->
+    <header>
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <h1>Romiothedon<span style="color: #fdd835;">.tech</span></h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow">
+        <div class="slides">
+            <img src="slide1.jpg" alt="Slide 1">
+            <img src="slide2.jpg" alt="Slide 2">
+            <img src="slide3.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Empowering Innovation</h2>
+        <p>Delivering cutting-edge technology solutions to elevate your business.</p>
+        <a href="#contact">Work With Us</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Romiothedon.tech is at the forefront of technological advancements, helping businesses unlock their true potential through custom software, AI, and innovative solutions.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Expertise</h2>
+        <div>
+            <h3>Custom Software Development</h3>
+            <p>Tailored software solutions for unique business challenges.</p>
+        </div>
+        <div>
+            <h3>Cloud Solutions</h3>
+            <p>Scalable cloud infrastructures to optimize your operations.</p>
+        </div>
+        <div>
+            <h3>Cybersecurity</h3>
+            <p>Robust systems to protect your data and business assets.</p>
+        </div>
+    </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio-grid">
+        <div>
+            <img src="project1.jpg" alt="Project 1" class="portfolio-image">
+            <h3>Project 1</h3>
+            <p>Description of Project 1 goes here.</p>
+        </div>
+        <div>
+            <img src="project2.jpg" alt="Project 2" class="portfolio-image">
+            <h3>Project 2</h3>
+            <p>Description of Project 2 goes here.</p>
+        </div>
+        <div>
+            <img src="project3.jpg" alt="Project 3" class="portfolio-image">
+            <h3>Project 3</h3>
+            <p>Description of Project 3 goes here.</p>
+        </div>
+        <div>
+            <img src="project4.jpg" alt="Project 4" class="portfolio-image">
+            <h3>Project 4</h3>
+            <p>Description of Project 4 goes here.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>Email: romiothedon775@gmail.com</p>
+        <p>Phone: +254797512647</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Romiothedon.tech. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script for Slideshow -->
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+
+        setInterval(() => {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].style.display = 'block';
+        }, 3000);
+    </script>
+</body>
+
